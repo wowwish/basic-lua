@@ -1,4 +1,6 @@
--- Tables are a fundamental data structure in lua that can be used as both arrays and hash maps.
+-- Tables are THE fundamental data structure in lua that can be used as both arrays and hash maps.
+-- A Table in lua is also an Object in the sense of Object-Oriented Programming as it can contain both
+-- literals and methods.
 
 -- using a table as an array
 a = {34, 22, 12, 9, -34, 55, 89, 1675, 12}
