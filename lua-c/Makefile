@@ -12,7 +12,9 @@ build:
 	# Also, since the compilation of code relies on the <math.h> directive of C,
 	# we add the "-lm" linker flag. The "m" stands for "libm", the library that
 	# contains <math.h>
-	gcc -std=c99 -Wall -D LUA_USE_POSIX ./lib/lua/src/*.c ./src/*.c -lm -o main
+	# Similarly, the SDL2 library of C is also linked as we use it for rendering
+	# graphics in a window using C
+	gcc -std=c99 -Wall -D LUA_USE_POSIX ./lib/lua/src/*.c ./src/*.c -lm -lSDL2 -o main
 
 
 clean:
